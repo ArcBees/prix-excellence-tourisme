@@ -1,0 +1,36 @@
+.choice_box {
+    color: C_TEXT;
+    background-color: C_SECONDARY;
+
+    display: inline-block;
+    padding: 30px;
+    width: 100%;
+
+    @mixin shadow(0, 3px, 5px, 0.1);
+}
+
+.choice_avatar {
+    width: 100px;
+    height: 100px;
+
+    vertical-align: middle;
+
+    @mixin rounded(50px);
+}
+
+.choice_finalist {
+    text-align: center;
+
+    margin: 35px 0 0;
+}
+
+.choice_finalist_name {
+    font-family: F_SECONDARY;
+    font-size: 22px;
+    display: block;
+}
+
+.choice_finalist_company {
+    color: C_TEXT_MEDIUM;
+    text-transform: uppercase;
+}

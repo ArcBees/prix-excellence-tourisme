@@ -1,0 +1,334 @@
+/**
+ * STYLE.CSS
+ * Default application style
+ *
+ * - INIT                       Document initialization
+ * - LAYOUT                     Container, Main section, Wrapper
+ * - HEADINGS                   Default style for <h1>, <h2>...
+ * - ELEMENTS                   Default style for elements like <p> and <a>
+ * - CLASSES                    Reusable classes clearfix, textcenter
+ * - COMPONENTS                 Default style for buttons
+ * - STYLES                     Classes for specific elements
+ */
+
+/* -- Init ----------------------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: rgba(31,172,227,1);
+    /* @alternate */ background: -moz-linear-gradient(-45deg, rgba(31,172,227,1) 0%, rgba(126,194,67,1) 100%);
+    /* @alternate */ background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(31,172,227,1)), color-stop(100%, rgba(126,194,67,1)));
+    /* @alternate */ background: -webkit-linear-gradient(-45deg, rgba(31,172,227,1) 0%, rgba(126,194,67,1) 100%);
+    /* @alternate */ background: -o-linear-gradient(-45deg, rgba(31,172,227,1) 0%, rgba(126,194,67,1) 100%);
+    /* @alternate */ background: -ms-linear-gradient(-45deg, rgba(31,172,227,1) 0%, rgba(126,194,67,1) 100%);
+    /* @alternate */ background: linear-gradient(135deg, rgba(31,172,227,1) 0%, rgba(126,194,67,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1face3', endColorstr='#7ec243', GradientType=1 );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: F_PRIMARY, Arial, sans-serif;
+    line-height: 1.25;
+
+    height: 100%;
+}
+
+p:first-child,
+ul:first-child,
+ol:first-child,
+dl:first-child,
+blockquote:first-child,
+pre:first-child,
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+    margin-top: 0;
+}
+
+img,
+textarea,
+input {
+    max-width: 100%;
+}
+
+/* -- Layout -------------------------------------------- */
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.main_section {
+    height: 100%;
+}
+
+.main_content {
+    display: table;
+    height: calc(100% - 180px);
+    width: 100%;
+}
+
+.main_content_desktop {
+    display: table;
+    height: calc(100% - 218px);
+    width: 100%;
+}
+
+.main_content .wrapper {
+    width: 290px;
+}
+
+.main_content > article,
+.main_content_desktop > article{
+    display: table-cell;
+
+    vertical-align: middle;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 640px;
+
+    position: relative;
+}
+
+.wrapper_desktop {
+    margin: 0 auto;
+    width: 980px;
+
+    position: relative;
+}
+
+@media (max-width: 649px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+/* -- Headings ------------------------------------------- */
+
+h1 {}
+
+h2,
+h3 {
+    font-size: 1.6rem;
+    font-family: F_SECONDARY;
+    line-height: 1em;
+
+    margin: 0.2em 0;
+}
+
+/* -- Elements ------------------------------------------- */
+
+a,
+a:hover,
+a:visited {
+    color: C_TEXT;
+    text-decoration: none;
+}
+
+p,
+li {
+    line-height: 1.2em;
+    font-size: 1.5rem;
+
+    margin: 0 0 0.8em;
+}
+
+li p,
+li ul,
+li ol {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+
+    vertical-align: middle;
+
+    -ms-interpolation-mode: bicubic;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+
+    margin: 0;
+
+    vertical-align: middle;
+}
+
+input {
+    color: #3f3f3f;
+
+    padding: 5px;
+    border: 1px solid #cccccc;
+
+    vertical-align: middle;
+
+    border-radius: 0;
+
+    outline: none;
+}
+
+/* -- Classes ------------------------------------------- */
+
+.txtcenter {
+    text-align: center;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+
+    overflow: hidden;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+/* -- Components ---------------------------------------- */
+
+.btn {
+    color: C_TEXT;
+    background-color: C_SECONDARY;
+    line-height: 1;
+    font-size: 1.5rem;
+    font-family: F_SECONDARY;
+    text-align: center;
+    text-decoration: none;
+    font-weight: normal;
+
+    cursor: pointer;
+    display: inline-block;
+    margin: 15px 0 50px;
+    height: 35px;
+    padding: .5em 1.5rem;
+    outline: 0;
+    border: 3px solid transparent;
+
+    position: relative;
+    vertical-align: middle;
+
+    @mixin rounded(3px);
+    @mixin shadow(0, 3px, 5px, .2);
+}
+
+.btn:hover {
+    border: 3px solid #000;
+}
+
+.btn_wide {
+    width: 100%;
+}
+
+.btn_primary {
+    background-color: C_PRIMARY;
+    color: #fff;
+}
+
+.btn_secondary {
+    background-color: #c2c2c2;
+    color: #fff;
+}
+
+/* -- Styles ------------------------------------------- */
+
+.logo_vote {
+    width: 105px;
+    height: 45px;
+    margin: 30px auto;
+}
+
+.logo_vote_desktop {
+    width: 200px;
+    height: 92px;
+    margin: 30px auto 0;
+}
+
+.text_step {
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.text_step p span,
+.text_main p span {
+    display: block;
+}
+
+a.jccq {
+    color: C_TEXT_LIGHT;
+    font-family: F_SECONDARY;
+    line-height: 36px;
+
+    display: inline-block;
+    height: 36px;
+    width: auto;
+    margin-top: 60px;
+}
+
+a.jccq:hover {
+    line-height: 36px;
+    text-decoration: underline;
+
+    height: 36px;
+    width: auto;
+}
+
+footer {
+    background-color: #000;
+
+    height: 75px;
+    padding-top: 8px;
+}
+
+.logoArcbees {
+    width: 55px;
+    height: 45px;
+    margin-top: 9px;
+
+    float: right;
+}
+
+.logoArcbees > a > svg {
+    fill: #fff;
+}
+
+.logoPrixExcellenceTourime {
+    width: 93px;
+    height: 60px;
+
+    float: left;
+}
+
+.logoQuebecor {
+	width: 93px;
+	height: 60px;
+
+	float: left;
+}

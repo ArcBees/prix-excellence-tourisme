@@ -1,0 +1,33 @@
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:w="urn:import:com.arcbees.bourseje.client.application.ui">
+
+    <ui:with field="res" type="com.arcbees.bourseje.client.resources.Resources"/>
+    <ui:with field="page" type="com.arcbees.bourseje.client.resources.PageVoteResources"/>
+
+    <g:HTMLPanel styleName="{res.styles.main_section}">
+        <w:Header/>
+
+        <section class="{res.styles.main_content}">
+            <article>
+                <div class="{res.styles.wrapper} {res.styles.clearfix}">
+                    <div class="{res.styles.text_step}">
+                        <h2>Étape 2</h2>
+                        <p>Choisissez votre Jeune entreprise
+                            <span>Coup de coeur de l’année 2017</span>
+                        </p>
+                    </div>
+                    <div ui:field="voteGroup">
+                        <form action="javascript:;" class="{page.style.vote_form}">
+                            <g:HTMLPanel ui:field="candidatesElement"/>
+                            <g:Button ui:field="submit" styleName="{res.styles.btn} {res.styles.btn_wide}">VOTEZ
+                            </g:Button>
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <w:Footer/>
+    </g:HTMLPanel>
+</ui:UiBinder>

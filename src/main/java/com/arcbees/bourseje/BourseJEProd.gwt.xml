@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<module rename-to='bourseje'>
+    <inherits name='com.arcbees.bourseje.BourseJE'/>
+
+    <extend-configuration-property name="gin.ginjector.modules"
+                                   value="com.arcbees.bourseje.client.RemoteModule"/>
+</module>

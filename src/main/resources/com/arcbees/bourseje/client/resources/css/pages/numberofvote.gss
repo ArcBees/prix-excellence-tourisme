@@ -1,0 +1,115 @@
+.text_intro {
+    margin: 30px 0 50px;
+}
+
+.text_intro > h2,
+.text_intro p {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.text_intro p span {
+    display: block;
+}
+
+.box_candidates {
+    background-color: C_SECONDARY;
+
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    height: 110px;
+
+    position: relative;
+}
+
+.box_candidates h3 {
+    font-size: 2.5rem;
+    font-family: F_SECONDARY;
+    line-height: 1;
+
+    margin: 0 0 .25em;
+}
+
+.box_candidates p {
+    color: C_TEXT_MEDIUM;
+    text-transform: uppercase;
+    font-size: 90%;
+}
+
+.box_candidates__link {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.box_candidates__link:hover {
+    color: C_PRIMARY;
+}
+
+.box_candidates__button {
+    font-size: 2.5rem;
+    font-family: F_SECONDARY;
+    line-height: 3.5;
+    text-align: center;
+}
+
+.box_candidates__button > i {
+    margin-right: 20px;
+}
+
+.avatar {
+    background-color: #ccc;
+    
+    display: inline-block;
+    margin-right: 20px;
+    width: 90px;
+    height: 90px;
+
+    vertical-align: middle;
+
+    @mixin rounded(45px);
+}
+
+.candidates {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nb_vote {
+    color: C_TEXT_LIGHT;
+    background-color: C_TEXT;
+    font-size: 3rem;
+    font-family: F_SECONDARY;
+    text-align: center;
+
+    display: inline-block;
+    height: 100%;
+    width: 100px;
+    padding: 35px 0;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.current_state_text {
+    margin-bottom: -15px;
+}
+
+.btn_login {
+    position: absolute;
+    top: -130px;
+    right: 10px;
+}
+
+.buttons {
+    margin-top: 40px;
+    margin-bottom: 10px;
+
+    position: relative;
+}
+
+.btn_gagnant {
+    position: absolute;
+    top: 3px;
+    right: 10px;
+}

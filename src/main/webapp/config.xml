@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        id="com.arcbees.bourseje"
+        versionCode="1"
+        version="1.0.0">
+
+    <name>Bourse JE</name>
+    <description>
+        Application de vote pour la bourse Jeune entreprise
+    </description>
+    <author email="christian.goudreau@arcbees.com" href="http://www.arcbees.com">
+        Produit et réalisé par Arcbees
+    </author>
+
+    <content src="index.html"/>
+    <access origin="*"/>
+
+    <icon src="icon.png"/>
+
+    <preference name="permissions" value="none"/>
+</widget>
