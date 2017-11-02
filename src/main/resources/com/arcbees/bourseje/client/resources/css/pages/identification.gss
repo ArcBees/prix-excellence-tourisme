@@ -24,7 +24,7 @@ form.login input {
 
 .error_message {
     background-color: C_ERROR;
-    color: C_TEXT_LIGHT;
+    color: C_TEXT;
     font-size: 1rem;
     text-align: center;
 

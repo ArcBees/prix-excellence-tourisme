@@ -27,18 +27,19 @@ body {
 }
 
 body {
-    background: rgba(31,172,227,1);
-    /* @alternate */ background: -moz-linear-gradient(-45deg, rgba(31,172,227,1) 0%, rgba(126,194,67,1) 100%);
-    /* @alternate */ background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(31,172,227,1)), color-stop(100%, rgba(126,194,67,1)));
-    /* @alternate */ background: -webkit-linear-gradient(-45deg, rgba(31,172,227,1) 0%, rgba(126,194,67,1) 100%);
-    /* @alternate */ background: -o-linear-gradient(-45deg, rgba(31,172,227,1) 0%, rgba(126,194,67,1) 100%);
-    /* @alternate */ background: -ms-linear-gradient(-45deg, rgba(31,172,227,1) 0%, rgba(126,194,67,1) 100%);
-    /* @alternate */ background: linear-gradient(135deg, rgba(31,172,227,1) 0%, rgba(126,194,67,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1face3', endColorstr='#7ec243', GradientType=1 );
+    background: rgba(0,99,255,1);
+    /* @alternate */ background: -moz-linear-gradient(0deg, rgba(0,169,230,1) 0%, rgba(0,99,255,1) 100%);
+    /* @alternate */ background: -webkit-gradient(top, bottom, color-stop(0%, rgba(0,169,230,1)), color-stop(100%, rgba(0,99,255,1)));
+    /* @alternate */ background: -webkit-linear-gradient(0deg, rgba(0,169,230,1) 0%, rgba(0,99,255,1) 100%);
+    /* @alternate */ background: -o-linear-gradient(0deg, rgba(0,169,230,1) 0%, rgba(0,99,255,1) 100%);
+    /* @alternate */ background: -ms-linear-gradient(0deg, rgba(0,169,230,1) 0%, rgba(0,99,255,1) 100%);
+    /* @alternate */ background: linear-gradient(0deg, rgba(0,169,230,1) 0%, rgba(0,99,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00A9E6', endColorstr='#0063FF', GradientType=1 );
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: F_PRIMARY, Arial, sans-serif;
     line-height: 1.25;
+	color: C_TEXT;
 
     height: 100%;
 }
@@ -83,7 +84,7 @@ input {
 
 .main_content_desktop {
     display: table;
-    height: calc(100% - 218px);
+    height: calc(100% - 197px);
     width: 100%;
 }
 
@@ -122,21 +123,24 @@ input {
 
 h1 {}
 
+h2 {
+    font-family: F_SECONDARY;
+}
+
 h2,
 h3 {
     font-size: 1.6rem;
-    font-family: F_SECONDARY;
     line-height: 1em;
 
     margin: 0.2em 0;
 }
+
 
 /* -- Elements ------------------------------------------- */
 
 a,
 a:hover,
 a:visited {
-    color: C_TEXT;
     text-decoration: none;
 }
 
@@ -214,7 +218,7 @@ input {
 /* -- Components ---------------------------------------- */
 
 .btn {
-    color: C_TEXT;
+    color: C_TEXT_LIGHT;
     background-color: C_SECONDARY;
     line-height: 1;
     font-size: 1.5rem;
@@ -239,7 +243,7 @@ input {
 }
 
 .btn:hover {
-    border: 3px solid #000;
+    border: 3px solid C_TEXT_LIGHT;
 }
 
 .btn_wide {
@@ -273,7 +277,7 @@ input {
 .text_step {
     text-align: center;
 
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .text_step p span,
@@ -301,10 +305,13 @@ a.jccq:hover {
 }
 
 footer {
-    background-color: #000;
+    background-color: C_SECONDARY;
 
     height: 75px;
-    padding-top: 8px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
 .logoArcbees {
@@ -319,16 +326,18 @@ footer {
     fill: #fff;
 }
 
-.logoPrixExcellenceTourime {
-    width: 93px;
-    height: 60px;
+.logoPrixExcellenceTourisme {
+    width: 76px;
+    height: 37px;
 
     float: left;
 }
 
 .logoQuebecor {
-	width: 93px;
-	height: 60px;
+	width: 80px;
+	height: 23px;
+}
 
-	float: left;
+.is_block {
+	display: block;
 }

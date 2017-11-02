@@ -14,6 +14,7 @@
     height: 100px;
 
     vertical-align: middle;
+    object-fit: cover;
 
     @mixin rounded(50px);
 }
@@ -25,7 +26,7 @@
 }
 
 .choice_finalist_name {
-    font-family: F_SECONDARY;
+    color: C_TEXT_MEDIUM;
     font-size: 22px;
     display: block;
 }

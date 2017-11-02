@@ -3,6 +3,8 @@ form.vote_form {
 }
 
 .finalist_box {
+    color: C_TEXT_MEDIUM;
+
     margin-bottom: 6px;
 }
 
@@ -18,7 +20,7 @@ form.vote_form {
 .finalist_box label {
     background: C_SECONDARY;
 
-    display: block;
+    display: flex;
     padding: 5px 10px;
     width: 100%;
     border: 3px solid C_SECONDARY;
@@ -29,7 +31,7 @@ form.vote_form {
 }
 
 .finalist_box input[type=radio]:checked + label {
-    border: 3px solid #000;
+    border: 3px solid #0c1a9b;
 
     @mixin shadow(0, 7px, 7px, .2);
 }
@@ -41,6 +43,7 @@ form.vote_form {
     height: 50px;
 
     vertical-align: middle;
+    object-fit: cover;
 
     @mixin rounded(25px);
 }
