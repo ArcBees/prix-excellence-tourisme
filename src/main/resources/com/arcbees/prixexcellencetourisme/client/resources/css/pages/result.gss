@@ -19,6 +19,7 @@
 }
 
 .box_candidates h3 {
+    color: C_TEXT_MEDIUM;
     font-size: 3.5rem;
     line-height: 1;
 
