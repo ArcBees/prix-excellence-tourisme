@@ -21,7 +21,7 @@
                             Code invalide. Veuillez réessayer.
                         </div>
 
-                        <input ui:field="code" type="password" max="5"/>
+                        <input ui:field="code" type="text" max="5"/>
                         <button class="{res.styles.btn} {res.styles.btn_wide}" type="submit">
                             Allons au vote!
                         </button>
