@@ -94,7 +94,8 @@ public class AddView extends ViewWithUiHandlers<AddUiHandlers>
 
     @Override
     public void onFinish(IUploader uploader) {
-        url = Strings.nullToEmpty(uploader.getServerMessage().getMessage());
+        url = Strings.nullToEmpty(uploader.getServerMessage().getMessage())
+                .replace("http://", "https://");
 
         imagePlaceHolder.setImageSource(url);
     }
