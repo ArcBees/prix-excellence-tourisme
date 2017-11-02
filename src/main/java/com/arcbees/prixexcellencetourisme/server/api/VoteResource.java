@@ -54,9 +54,8 @@ public class VoteResource {
     @POST
     @Path(ResourcesPath.CODE)
     public Response useCode(String code, @Context HttpServletRequest request, @Context HttpServletResponse response) {
-//        code = code.replaceAll("\"", ""); // Workaround for serialization leftover quotes
-
-//        voteService.useCode(code);
+        code = code.replaceAll("\"", ""); // Workaround for serialization leftover quotes
+        voteService.useCode(code);
 
         return Response.ok().build();
     }
@@ -64,9 +63,8 @@ public class VoteResource {
     @POST
     public Response vote(VoteItem voteItem, @Context HttpServletRequest request,
                          @Context HttpServletResponse response) {
-//        String code = getCodeFromCookies(request.getCookies());
-
-//        voteService.vote(voteItem, code);
+        String code = getCodeFromCookies(request.getCookies());
+        voteService.vote(voteItem, code);
 
         return Response.ok().build();
     }
