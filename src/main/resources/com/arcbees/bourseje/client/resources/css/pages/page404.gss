@@ -1,7 +1,7 @@
 .error {
     margin: 0 auto 20px;
-    width: 105px;
-    height: 125px;
+    width: 237px;
+    height: 88px;
 
     transform-origin: 50% 50%;
 }

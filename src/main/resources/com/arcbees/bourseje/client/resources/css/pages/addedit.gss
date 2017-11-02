@@ -3,6 +3,7 @@
 .addedit {
     background-color: #fff;
     font-size: 1.8rem;
+	color: C_TEXT_LIGHT;
 
     padding: 30px;
     margin-top: 145px;
@@ -52,6 +53,8 @@
 .addedit__photo__placeholder img {
     width: 180px;
     height: 180px;
+
+	object-fit: cover;
 }
 
 .addedit__label {

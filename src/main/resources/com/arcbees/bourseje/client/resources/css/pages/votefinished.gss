@@ -1,7 +1,7 @@
 .vote_icon {
     margin: 0 auto 20px;
-    width: 160px;
-    height: 115px;
+    width: 176px;
+    height: 103px;
 }
 
 .shake_clock {

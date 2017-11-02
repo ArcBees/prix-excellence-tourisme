@@ -4,22 +4,21 @@
     <ui:with field="res" type="com.arcbees.bourseje.client.resources.Resources"/>
 
     <g:HTMLPanel tag="footer">
-        <div class="{res.styles.wrapper} {res.styles.clearfix}">
-            <div class="{res.styles.logoPrixExcellenceTourime}">
-                <a href="http://www.jccq.qc.ca/" target="_blank">
-                    <svg:SVGImage resource="{res.logoPrixExcellenceTourime}"/>
-                </a>
-            </div>
-            <div class="{res.styles.logoQuebecor}">
-                <a href="http://quebecormediasales.ca/" target="_blank">
-                    <svg:SVGImage resource="{res.logoQuebecor}"/>
-                </a>
-            </div>
-            <div class="{res.styles.logoArcbees}">
-                <a href="http://www.arcbees.com" target="_blank">
-                    <svg:SVGImage resource="{res.logoArcbees}"/>
-                </a>
-            </div>
+        <div class="{res.styles.logoPrixExcellenceTourisme}">
+            <!-- TODO ajouter le lien vers le site web -->
+            <!--<a href="http://www.jccq.qc.ca/" target="_blank">-->
+                <g:Image ui:field="myImage" resource="{res.logoPrixExcellenceTourisme}"/>
+            <!--</a>-->
+        </div>
+        <div class="{res.styles.logoQuebecor}">
+            <a href="http://quebecormediaventes.ca/" target="_blank">
+                <svg:SVGImage resource="{res.logoQuebecor}"/>
+            </a>
+        </div>
+        <div class="{res.styles.logoArcbees}">
+            <a href="http://www.arcbees.com" target="_blank">
+                <svg:SVGImage resource="{res.logoArcbees}"/>
+            </a>
         </div>
     </g:HTMLPanel>
 </ui:UiBinder>

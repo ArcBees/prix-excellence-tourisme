@@ -42,8 +42,6 @@ public interface Resources extends FontResources {
 
         String logoArcbees();
 
-        String logoPrixExcellenceTourime();
-
         String logo_vote();
 
         String wrapper_desktop();
@@ -63,6 +61,12 @@ public interface Resources extends FontResources {
         String btn_secondary();
 
         String btn_primary();
+
+        String logoQuebecor();
+
+        String logoPrixExcellenceTourisme();
+
+        String is_block();
     }
 
     @Source("img/logoArcbees.svg")
@@ -71,8 +75,8 @@ public interface Resources extends FontResources {
     @Source("img/logoQuebecor.svg")
     SVGResource logoQuebecor();
 
-    @Source("img/logoPrixExcellenceTourime.svg")
-    SVGResource logoPrixExcellenceTourime();
+    @Source("img/logoExcellence.png")
+    ImageResource logoPrixExcellenceTourisme();
 
     @Source("img/icon_app.png")
     ImageResource iconApp();

@@ -17,13 +17,13 @@
 package com.arcbees.bourseje.client.resources;
 
 public class Colors {
-    public static final String C_PRIMARY = "#1face3";
+    public static final String C_PRIMARY = "#00a9e6";
     public static final String C_SECONDARY = "#fff";
     public static final String C_ERROR = "#ca2228";
 
-    public static final String C_TEXT = "#000";
+    public static final String C_TEXT = "#fff";
     public static final String C_TEXT_MEDIUM = "#6b6b6b";
-    public static final String C_TEXT_LIGHT = C_SECONDARY;
+    public static final String C_TEXT_LIGHT = "#0c1a9b";
 
     public static final String C_STRIPE_LIGHT = C_SECONDARY;
     public static final String C_STRIPE_COLORED = C_PRIMARY;

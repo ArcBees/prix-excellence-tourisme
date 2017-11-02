@@ -26,6 +26,8 @@ public interface PageThanksResources extends ClientBundle {
         String text_appear();
 
         String pulse_icon();
+
+        String letter_anim();
     }
 
     @Source({"com/arcbees/gsss/animation/client/animationsettings.gss",

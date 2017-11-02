@@ -13,9 +13,8 @@
             <article>
                 <div class="{res.styles.wrapper_desktop} {res.styles.clearfix} {res.styles.txtcenter}">
                     <div class="{page.style.text_intro}">
-                        <h2>La jeune personnalité
-                            <span>d’affaires 2017</span>
-                            <span>est</span>
+                        <h2>Le Prix excellence tourisme
+                            <span>est remis à</span>
                         </h2>
                     </div>
                     <div class="{anim.style.animation} {anim.style.bounceIn} {res.grid.col} {res.grid.col_4} {res.grid.col_push_4} {page.style.box_candidates}">
