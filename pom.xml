@@ -3,11 +3,11 @@
         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.arcbees.bourseje</groupId>
-    <artifactId>bourseje</artifactId>
+    <groupId>com.arcbees.prixexcellencetourisme</groupId>
+    <artifactId>prixexcellencetourisme</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>Bourse JE</name>
+    <name>Prix Excellence Tourisme</name>
 
     <properties>
         <guava.version>18.0</guava.version>
@@ -256,7 +256,7 @@
 
                     <runTarget>index.html</runTarget>
                     <modules>
-                        <module>com.arcbees.bourseje.BourseJEDebug</module>
+                        <module>com.arcbees.prixexcellencetourisme.ApplicationDebug</module>
                     </modules>
                 </configuration>
                 <executions>
@@ -293,7 +293,7 @@
                         <artifactId>gwt-maven-plugin</artifactId>
 
                         <configuration>
-                            <module>com.arcbees.bourseje.BourseJEDebug</module>
+                            <module>com.arcbees.prixexcellencetourisme.ApplicationDebug</module>
                         </configuration>
                     </plugin>
                 </plugins>
@@ -310,7 +310,7 @@
                         <artifactId>gwt-maven-plugin</artifactId>
 
                         <configuration>
-                            <module>com.arcbees.bourseje.BourseJEProd</module>
+                            <module>com.arcbees.prixexcellencetourisme.ApplicationProd</module>
                         </configuration>
                     </plugin>
                 </plugins>

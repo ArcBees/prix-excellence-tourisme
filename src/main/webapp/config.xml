@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns="http://www.w3.org/ns/widgets"
-        id="com.arcbees.bourseje"
+        id="com.arcbees.prixexcellencetourisme"
         versionCode="1"
         version="1.0.0">
 
-    <name>Bourse JE</name>
+    <name>Prix Excellence Tourisme</name>
     <description>
-        Application de vote pour la bourse Jeune entreprise
+        Application de vote pour le Prix Excellence Tourisme
     </description>
     <author email="christian.goudreau@arcbees.com" href="http://www.arcbees.com">
         Produit et réalisé par Arcbees

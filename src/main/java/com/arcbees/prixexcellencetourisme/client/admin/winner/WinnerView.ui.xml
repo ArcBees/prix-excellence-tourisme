@@ -1,0 +1,43 @@
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:w="urn:import:com.arcbees.prixexcellencetourisme.client.admin.ui">
+
+    <ui:with field="res" type="com.arcbees.prixexcellencetourisme.client.resources.Resources"/>
+    <ui:with field="anim" type="com.arcbees.prixexcellencetourisme.client.resources.AnimationsResources"/>
+    <ui:with field="page" type="com.arcbees.prixexcellencetourisme.client.resources.PageResultResources"/>
+
+    <g:HTMLPanel styleName="{res.styles.main_section}">
+        <w:Header/>
+
+        <section class="{res.styles.main_content_desktop}">
+            <article>
+                <div class="{res.styles.wrapper_desktop} {res.styles.clearfix} {res.styles.txtcenter}">
+                    <div class="{page.style.text_intro}">
+                        <h2>Le Prix excellence tourisme
+                            <span>est remis à</span>
+                        </h2>
+                    </div>
+                    <div class="{anim.style.animation} {anim.style.bounceIn} {res.grid.col} {res.grid.col_4} {res.grid.col_push_4} {page.style.box_candidates}">
+                        <img ui:field="picture" src="" class="{page.style.avatar}"/>
+                        <h3 ui:field="name">undefined</h3>
+                        <p ui:field="company">undefined</p>
+                        <div class="{page.style.number}">
+                            <p ui:field="numberOfVotes">undefined
+                                <span>voix</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="{anim.style.animation} {anim.style.infinite} {anim.style.bounceIn} {page.style.artifice} {page.style.artifice_1}"></div>
+                <div class="{anim.style.animation} {anim.style.infinite} {anim.style.bounceIn} {page.style.artifice} {page.style.artifice_2}"></div>
+                <div class="{anim.style.animation} {anim.style.infinite} {anim.style.bounceIn} {page.style.artifice} {page.style.artifice_3}"></div>
+                <div class="{anim.style.animation} {anim.style.infinite} {anim.style.bounceIn} {page.style.artifice} {page.style.artifice_4}"></div>
+                <div class="{anim.style.animation} {anim.style.infinite} {anim.style.bounceIn} {page.style.artifice} {page.style.artifice_5}"></div>
+                <div class="{anim.style.animation} {anim.style.infinite} {anim.style.bounceIn} {page.style.artifice} {page.style.artifice_6}"></div>
+                <div class="{anim.style.animation} {anim.style.infinite} {anim.style.bounceIn} {page.style.artifice} {page.style.artifice_7}"></div>
+            </article>
+        </section>
+
+        <w:Footer/>
+    </g:HTMLPanel>
+</ui:UiBinder>

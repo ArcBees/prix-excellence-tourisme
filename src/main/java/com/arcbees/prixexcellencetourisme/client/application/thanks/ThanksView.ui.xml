@@ -1,0 +1,37 @@
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:w="urn:import:com.arcbees.prixexcellencetourisme.client.application.ui">
+
+    <ui:with field="res" type="com.arcbees.prixexcellencetourisme.client.resources.Resources"/>
+    <ui:with field="anim" type="com.arcbees.prixexcellencetourisme.client.resources.AnimationsResources"/>
+    <ui:with field="page" type="com.arcbees.prixexcellencetourisme.client.resources.PageThanksResources"/>
+
+    <g:HTMLPanel styleName="{res.styles.main_section}">
+        <w:Header/>
+
+        <section class="{res.styles.main_content}">
+            <article>
+                <div class="{res.styles.wrapper} {res.styles.txtcenter}">
+                    <div class="{page.style.vote_icon}">
+                        <svg viewBox="0 0 95 140">
+                            <path class="{anim.style.animation} {page.style.letter_anim}"
+                                  d="M68.742.53l-53.43 26.084-1.076.51.524 1.083L31.364 62.17l.538 1.054L87.456 36.12s-.238-.46-.524-1.047L69.812 0l-1.07.53zM29.408 26.196l30.337-14.81 3.227-1.606-1.327 3.33L53.2 34.334l-.468 1.173-1.208-.356-21.892-6.378-3.444-1.005 3.22-1.572zm26.67 15.982l11.47-28.68 1.16-2.914 1.396 2.794 9.235 18.91.607 1.242-1.244.607L35.75 55.093l-1.243.608-.635-1.215-9.228-18.86-1.397-2.794 3.01.88 29.758 8.65.063-.183z"
+                                  fill="#0A157A"/>
+                            <path fill="#FFF" class="{anim.style.animation} {page.style.pulse_icon}"
+                                  d="M67.82 53.836h17.33v76.503H9.43V53.835h7.733l-4.394-9.43H0v95.363h94.58l-.14-93.926-10.526.056"/>
+                        </svg>
+                    </div>
+                    <div class="{res.styles.text_main} {page.style.text_appear}">
+                        <h2>Vote reçu</h2>
+                        <p>Merci d'avoir voté!</p>
+                        <a href="#/identification" class="{res.styles.btn} {res.styles.btn_wide}">
+                            Entrez un nouveau code
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <w:Footer/>
+    </g:HTMLPanel>
+</ui:UiBinder>

@@ -1,0 +1,124 @@
+/**
+ * Copyright 2016 ArcBees Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */
+
+package com.arcbees.prixexcellencetourisme.client.resources;
+import com.arcbees.gsss.grid.client.GridResources;
+import com.google.gwt.resources.client.CssResource;
+import com.google.gwt.resources.client.ImageResource;
+
+import org.vectomatic.dom.svg.ui.SVGResource;
+
+public interface Resources extends FontResources {
+    interface Normalize extends CssResource {
+    }
+
+    public interface Styles extends CssResource {
+        String clearfix();
+
+        String wrapper();
+
+        String btn();
+
+        String txtcenter();
+
+        String jccq();
+
+        String btn_wide();
+
+        String container();
+
+        String logoArcbees();
+
+        String logo_vote();
+
+        String wrapper_desktop();
+
+        String text_step();
+
+        String text_main();
+
+        String main_content();
+
+        String main_section();
+
+        String logo_vote_desktop();
+
+        String main_content_desktop();
+
+        String btn_secondary();
+
+        String btn_primary();
+
+        String logoQuebecor();
+
+        String logoPrixExcellenceTourisme();
+
+        String is_block();
+    }
+
+    @Source("img/logoArcbees.svg")
+    SVGResource logoArcbees();
+
+    @Source("img/logoQuebecor.svg")
+    SVGResource logoQuebecor();
+
+    @Source("img/logoExcellence.png")
+    ImageResource logoPrixExcellenceTourisme();
+
+    @Source("img/icon_app.png")
+    ImageResource iconApp();
+
+    @Source("img/icon_winner.png")
+    ImageResource iconWinner();
+
+    @Source("img/icon_vote.png")
+    ImageResource iconVote();
+
+    @Source("img/voteAccent.png")
+    ImageResource voteAccent();
+
+    @Source("img/DominicFillion.jpg")
+    ImageResource DominicFillion();
+
+    @Source("img/JohanieGagnon.jpg")
+    ImageResource JohanieGagnon();
+
+    @Source("img/MaximeGagnon.jpg")
+    ImageResource MaximeGagnon();
+
+    @Source("img/RaphaelProvost.jpg")
+    ImageResource RaphaelProvost();
+
+    @Source("img/SimonValin.jpg")
+    ImageResource SimonValin();
+
+    @Source("img/VincentBouchard.jpg")
+    ImageResource VincentBouchard();
+
+    @Source("css/normalize.gss")
+    Normalize normalize();
+
+    @Source({"com/arcbees/gsss/mixin/client/mixins.gss",
+            "fonts/brandon.gss",
+            "css/colors.gss",
+            "fonts/fonts.gss",
+            "css/styles.gss"})
+    Styles styles();
+
+    @Source({"com/arcbees/prixexcellencetourisme/client/resources/css/gridSettings.gss",
+            "com/arcbees/gsss/grid/client/grid.gss"})
+    GridResources.Grid grid();
+}
