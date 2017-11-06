@@ -19,7 +19,7 @@
     margin-bottom: 10px;
     height: 140px;
     display: flex;
-	align-items: center;
+    align-items: center;
 
     position: relative;
 }
@@ -84,9 +84,9 @@
     font-family: F_SECONDARY;
     text-align: center;
 
-    display: inline-block;
     height: 100%;
-    width: 100px;
+    margin-left: auto;
+    min-width: 100px;
     padding: 35px 0;
 }
 
