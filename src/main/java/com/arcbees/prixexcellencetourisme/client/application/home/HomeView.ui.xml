@@ -22,7 +22,7 @@
                             </g>
                         </svg>
                     </div>
-                    <p>La plate-forme de vote pour <span class="{res.styles.is_block}">le <strong>Prix Excellence Tourisme</strong></span></p>
+                    <p>La plate-forme de vote pour <span class="{res.styles.is_block}">les <strong>Prix Excellence Tourisme</strong></span></p>
                     <a href="#/identification" class="{res.styles.btn} {res.styles.btn_wide}">Que le vote commence...</a>
                 </div>
             </article>
