@@ -17,15 +17,17 @@
 
     padding: 10px 20px;
     margin-bottom: 10px;
-    height: 110px;
+    height: 140px;
+    display: flex;
+	align-items: center;
 
     position: relative;
 }
 
 .box_candidates h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 1;
-	color: C_TEXT_MEDIUM;
+    color: C_TEXT_MEDIUM;
 
     margin: 0 0 .25em;
 }
@@ -65,7 +67,7 @@
     height: 90px;
 
     vertical-align: middle;
-	object-fit: cover;
+    object-fit: cover;
 
     @mixin rounded(45px);
 }
@@ -86,10 +88,6 @@
     height: 100%;
     width: 100px;
     padding: 35px 0;
-
-    position: absolute;
-    top: 0;
-    right: 0;
 }
 
 .current_state_text {
